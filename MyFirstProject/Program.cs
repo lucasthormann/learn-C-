@@ -11,7 +11,7 @@ namespace MyFirstProject
         static void Main(string[] args)
         {
 
-            string textAge = "23";
+           /* string textAge = "23";
             int age = Convert.ToInt32(textAge);
             Console.WriteLine(age);
             Console.WriteLine("----------------------------------------------------------");
@@ -53,9 +53,54 @@ namespace MyFirstProject
             Console.WriteLine("----------------------------------------------------------");
             Console.WriteLine("Decimal size: ");
             Console.WriteLine(decimal.MaxValue);
-            Console.WriteLine(decimal.MinValue);
+            Console.WriteLine(decimal.MinValue);*/
 
 
+            string textNum = Console.ReadLine();
+            int num = Convert.ToInt32(textNum);
+            if(num < 18)
+            {
+                Console.WriteLine("You are not an adult yet!!");
+            }
+            else
+            {
+                Console.WriteLine("You are an adult because you are " + num + " years old!");
+            }
+
+            Console.Write("Enter the day of the week: ");
+            int day = Convert.ToInt32(Console.ReadLine());
+
+            switch (day)
+            {
+                case 1: Console.WriteLine("It's Monday!");
+                    break;
+
+                case 2: Console.WriteLine("It's Tuesday!");
+                    break;
+
+                case 3: Console.WriteLine("It's Wednesday!");
+                    break;
+
+                case 4: Console.WriteLine("It's Thursday!");
+                    break;
+
+                case 5: Console.WriteLine("It's Friday!");
+                    break;
+
+                case 6: Console.WriteLine("It's Saturday!");
+                    break;
+
+                case 7: Console.WriteLine("It's Sunday!");
+                    break;
+
+                default: Console.WriteLine("Invalid Input!");
+                    break;
+
+            }
+
+            //conditional operator
+            string result = day >= 8 || day <= 0 ? "Invalid" : "Valid";
+            Console.WriteLine(result);
             Console.ReadLine();
         }
     }
