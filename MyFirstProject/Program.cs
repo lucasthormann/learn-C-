@@ -104,7 +104,7 @@ namespace MyFirstProject
             Console.ReadLine();*/
 
 
-            bool success = true;
+            /*bool success = true;
 
             while (success)
             {
@@ -122,7 +122,37 @@ namespace MyFirstProject
                 }
 
             }
-            Console.ReadLine();
+            Console.ReadLine();*/
+            /*Console.WriteLine("Enter an integer value: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= num; i++)
+            {
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (i % 3 == 0 && i % 5 != 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 3 != 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }*/
+
+            Console.WriteLine("Enter your message: ");
+            string message = Console.ReadLine();
+
+            for(int i = message.Length-1; i >= 0; i--)
+            {
+                Console.Write(message[i]);
+            }
+
         }
     }
 }
