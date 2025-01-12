@@ -145,12 +145,36 @@ namespace MyFirstProject
                 }
             }*/
 
-            Console.WriteLine("Enter your message: ");
-            string message = Console.ReadLine();
+            /*Console.Write("Enter a password: ");
+            string password = Console.ReadLine();
+            
+            Console.Write("Enter the password again: ");
+            string passwordC = Console.ReadLine();
 
-            for(int i = message.Length-1; i >= 0; i--)
+            if (!password.Equals(string.Empty) && !passwordC.Equals(string.Empty))
             {
-                Console.Write(message[i]);
+                if (password.Equals(passwordC)){
+                    Console.WriteLine("Passwords match!");
+                }
+                else
+                {
+                    Console.WriteLine("Passwords do not match.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please enter a password.");
+            }*/
+            int[] arr = new int[10];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Enter a number: ");
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine($"{arr[i]}");
             }
 
         }
